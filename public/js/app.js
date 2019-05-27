@@ -1,6 +1,6 @@
 /* 這份js檔案是在client端執行的JS代碼 */
 
-console.log('Client side javascript is loaded!')
+
 
 // 選取 element
 const weatherForm = document.querySelector('form')
