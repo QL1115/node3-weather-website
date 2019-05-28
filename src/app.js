@@ -26,13 +26,13 @@ app.use(express.static(publicDirPath))  // static中介路由: 為每一個要�
 app.get('', (req, res) => {
     res.render('index', {               // 使用模板引擎頁面, 不需要 file extension
         title: 'Weather App',
-        name: 'Jane'
+        name: 'QL'
     }) 
 })
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'Jane'
+        name: 'QL'
     })
 })
 
@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helpText: 'There some useful words.',
-        name: 'Jane'
+        name: 'QL'
     })
 })
 app.get('/weather', (req, res) => {
@@ -94,7 +94,7 @@ app.get('/help/*', (req, res) => {
     res.render('404',{
         title: '404',
         errorMsg: 'Help article not found.',
-        name: 'Jane'
+        name: 'QL'
     })
 })
 
@@ -104,7 +104,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         errorMsg: 'Page not found.',
-        name: 'Jane'
+        name: 'QL'
     })
 })
 // 

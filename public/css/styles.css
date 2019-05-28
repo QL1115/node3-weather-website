@@ -41,7 +41,12 @@ header nav a  {
 input {
     border: 1px solid #ccc;
     padding: 8px;
+    outline-color: #888;
 }
+
+/* input:focus {
+    border: 2px solid #ccc;
+} */
 
 button {
     cursor: pointer;
@@ -49,4 +54,5 @@ button {
     background-color: #888;
     color: white;
     padding: 8px;
+    outline: none;
 }
