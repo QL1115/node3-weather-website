@@ -44,10 +44,6 @@ input {
     outline-color: #888;
 }
 
-/* input:focus {
-    border: 2px solid #ccc;
-} */
-
 button {
     cursor: pointer;
     border: 1px solid #888;
