@@ -16,9 +16,10 @@ weatherForm.addEventListener('submit', (event) => { // 注意event參數
     // loading message
     msgOne.textContent = 'loading...'
     msgTwo.textContent = ''
+    
     // fetch the weather
     // fetch api: browser based API
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         // response.json().then(...) : 等到response回應之後，解析json
         response.json().then((data) => {
             if (data.error) {   //
